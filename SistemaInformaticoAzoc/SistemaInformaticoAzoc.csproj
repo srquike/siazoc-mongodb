@@ -414,6 +414,7 @@
     <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
     <Content Include="mongocrypt.dll" />
+    <None Include="Resources\user.png" />
     <None Include="Resources\azoc-logo.png" />
   </ItemGroup>
   <ItemGroup />

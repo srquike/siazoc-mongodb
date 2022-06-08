@@ -8,13 +8,13 @@ namespace SistemaInformaticoAzoc.Formularios.Controles
 {
     public partial class AdministracionMenuStrip : UserControl
     {
-        private readonly Form _mdiParent;
+        private readonly FrmPrincipal _mdiParent;
         private FrmUsuarios _frmUsuarios;
         private FrmEmpleados _frmEmpleados;
         private FrmCargos _frmCargos;
 
 
-        public AdministracionMenuStrip(Form mdiParent)
+        public AdministracionMenuStrip(FrmPrincipal mdiParent)
         {
             InitializeComponent();
 
@@ -31,7 +31,7 @@ namespace SistemaInformaticoAzoc.Formularios.Controles
                 _frmUsuarios = new FrmUsuarios();
                 _frmUsuarios.MdiParent = _mdiParent;
                 _frmUsuarios.FormClosed += new FormClosedEventHandler(FrmUsuarios_Closed);
-                _frmUsuarios.Show();                
+                _frmUsuarios.Show();
             }
             else
             {

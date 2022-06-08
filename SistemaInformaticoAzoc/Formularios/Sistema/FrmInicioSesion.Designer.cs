@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ChkVerClave = new System.Windows.Forms.CheckBox();
             this.TxtClave = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ChkVerClave = new System.Windows.Forms.CheckBox();
             this.BtnIniciarSesion = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -53,6 +53,18 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del usuario";
+            // 
+            // ChkVerClave
+            // 
+            this.ChkVerClave.AutoSize = true;
+            this.ChkVerClave.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChkVerClave.Location = new System.Drawing.Point(7, 150);
+            this.ChkVerClave.Name = "ChkVerClave";
+            this.ChkVerClave.Size = new System.Drawing.Size(190, 23);
+            this.ChkVerClave.TabIndex = 10;
+            this.ChkVerClave.Text = "Mostrar contraseña";
+            this.ChkVerClave.UseVisualStyleBackColor = true;
+            this.ChkVerClave.CheckedChanged += new System.EventHandler(this.ChkVerClave_CheckedChanged);
             // 
             // TxtClave
             // 
@@ -95,17 +107,6 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Nombre de usuario:";
             // 
-            // ChkVerClave
-            // 
-            this.ChkVerClave.AutoSize = true;
-            this.ChkVerClave.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChkVerClave.Location = new System.Drawing.Point(7, 150);
-            this.ChkVerClave.Name = "ChkVerClave";
-            this.ChkVerClave.Size = new System.Drawing.Size(190, 23);
-            this.ChkVerClave.TabIndex = 10;
-            this.ChkVerClave.Text = "Mostrar contraseña";
-            this.ChkVerClave.UseVisualStyleBackColor = true;
-            // 
             // BtnIniciarSesion
             // 
             this.BtnIniciarSesion.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -144,9 +145,10 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmInicioSesion";
-            this.Text = "SIAZOC :: Cooperatica AZOC de R. L.";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SIAZOC :: Cooperativa AZOC de R. L.";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

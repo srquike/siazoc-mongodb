@@ -16,11 +16,13 @@ namespace SistemaInformaticoAzoc
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            var frmInicioSesion = new FrmInicioSesion();
-            var frmPrincipal = new FrmPrincipal(frmInicioSesion.usuario);
+            var frmInicioSesion = new FrmInicioSesion();            
 
             if (frmInicioSesion.ShowDialog() == DialogResult.OK)
             {
+                var frmPrincipal = new FrmPrincipal();
+                frmPrincipal._usuario = frmInicioSesion.usuarioLogeado;
+
                 Application.Run(frmPrincipal);
 
                 if (frmPrincipal.DialogResult == DialogResult.Retry)

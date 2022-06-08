@@ -60,9 +60,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(15, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(608, 224);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -74,7 +74,7 @@
             this.CmbEmpleados.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbEmpleados.FormattingEnabled = true;
             this.CmbEmpleados.Location = new System.Drawing.Point(8, 47);
-            this.CmbEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CmbEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.CmbEmpleados.Name = "CmbEmpleados";
             this.CmbEmpleados.Size = new System.Drawing.Size(270, 27);
             this.CmbEmpleados.TabIndex = 1;
@@ -95,7 +95,7 @@
             this.ChkAdministrador.AutoSize = true;
             this.ChkAdministrador.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkAdministrador.Location = new System.Drawing.Point(8, 155);
-            this.ChkAdministrador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChkAdministrador.Margin = new System.Windows.Forms.Padding(4);
             this.ChkAdministrador.Name = "ChkAdministrador";
             this.ChkAdministrador.Size = new System.Drawing.Size(199, 23);
             this.ChkAdministrador.TabIndex = 3;
@@ -107,7 +107,7 @@
             this.ChkActivarUsuario.AutoSize = true;
             this.ChkActivarUsuario.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkActivarUsuario.Location = new System.Drawing.Point(8, 186);
-            this.ChkActivarUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChkActivarUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.ChkActivarUsuario.Name = "ChkActivarUsuario";
             this.ChkActivarUsuario.Size = new System.Drawing.Size(163, 23);
             this.ChkActivarUsuario.TabIndex = 4;
@@ -119,18 +119,19 @@
             this.ChkVerClaves.AutoSize = true;
             this.ChkVerClaves.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkVerClaves.Location = new System.Drawing.Point(330, 155);
-            this.ChkVerClaves.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChkVerClaves.Margin = new System.Windows.Forms.Padding(4);
             this.ChkVerClaves.Name = "ChkVerClaves";
             this.ChkVerClaves.Size = new System.Drawing.Size(118, 23);
             this.ChkVerClaves.TabIndex = 7;
             this.ChkVerClaves.Text = "Ver claves";
             this.ChkVerClaves.UseVisualStyleBackColor = true;
+            this.ChkVerClaves.CheckedChanged += new System.EventHandler(this.ChkVerClaves_CheckedChanged);
             // 
             // TxtRepetirClave
             // 
             this.TxtRepetirClave.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtRepetirClave.Location = new System.Drawing.Point(330, 118);
-            this.TxtRepetirClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtRepetirClave.Margin = new System.Windows.Forms.Padding(4);
             this.TxtRepetirClave.Name = "TxtRepetirClave";
             this.TxtRepetirClave.Size = new System.Drawing.Size(270, 26);
             this.TxtRepetirClave.TabIndex = 6;
@@ -151,7 +152,7 @@
             // 
             this.TxtClave.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtClave.Location = new System.Drawing.Point(330, 47);
-            this.TxtClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtClave.Margin = new System.Windows.Forms.Padding(4);
             this.TxtClave.Name = "TxtClave";
             this.TxtClave.Size = new System.Drawing.Size(270, 26);
             this.TxtClave.TabIndex = 5;
@@ -172,7 +173,7 @@
             // 
             this.TxtNombre.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombre.Location = new System.Drawing.Point(8, 118);
-            this.TxtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(270, 26);
             this.TxtNombre.TabIndex = 2;
@@ -193,7 +194,7 @@
             this.BtnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnCancelar.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Location = new System.Drawing.Point(354, 248);
-            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(5);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(270, 68);
             this.BtnCancelar.TabIndex = 8;
@@ -205,7 +206,7 @@
             // 
             this.BtnCrearUsuario.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCrearUsuario.Location = new System.Drawing.Point(73, 248);
-            this.BtnCrearUsuario.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BtnCrearUsuario.Margin = new System.Windows.Forms.Padding(5);
             this.BtnCrearUsuario.Name = "BtnCrearUsuario";
             this.BtnCrearUsuario.Size = new System.Drawing.Size(270, 68);
             this.BtnCrearUsuario.TabIndex = 9;

@@ -67,5 +67,11 @@ namespace SistemaInformaticoAzoc.Formularios
                 MessageBox.Show($"Ocurrio un error al intentar crear al usuario. {ex.Message}", "Crear usuario: Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void ChkVerClaves_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtClave.UseSystemPasswordChar = !ChkVerClaves.Checked;
+            TxtRepetirClave.UseSystemPasswordChar = !ChkVerClaves.Checked;
+        }
     }
 }

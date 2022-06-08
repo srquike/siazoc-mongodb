@@ -75,6 +75,52 @@ namespace SistemaInformaticoAzoc.Servicios
             // return _collection.FindAsync(u => u.UsuarioId == id).Result.FirstOrDefaultAsync();
         }
 
+        public Task<Usuario> GetByNameAsync(string name)
+        {
+            BsonDocument lookup = new BsonDocument
+            {
+                {
+                    "$lookup", new BsonDocument
+                    {
+                        { "from", "empleados"},
+                        { "localField", "empleado_id"},
+                        { "foreignField", "_id"},
+                        { "as", "empleado"}
+                    }
+                }
+            };
+
+            BsonDocument match = new BsonDocument
+            {
+                {
+                    "$match", new BsonDocument
+                    {
+                        { "nombre", new BsonString(name) }
+                    }
+                }
+            };
+
+            BsonDocument unwind = new BsonDocument
+            {
+                {
+                    "$unwind", new BsonDocument
+                    {
+                        { "path", "$empleado" },
+                        { "preserveNullAndEmptyArrays", BsonBoolean.True }
+                    }
+                }
+            };
+
+            BsonDocument[] pipeLine = new BsonDocument[]
+            {
+                match,
+                lookup,
+                unwind
+            };
+
+            return _collection.AggregateAsync<Usuario>(pipeLine).Result.FirstOrDefaultAsync();
+        }
+
         public Task<List<Usuario>> GetAllAsync()
         {
             BsonDocument lookup = new BsonDocument
