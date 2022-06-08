@@ -142,6 +142,10 @@
 
         #endregion
 
+        /// <summary>
+        /// para gurardar los datos de los cargos 
+        /// </summary>
+
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox TxtDescripcion;
         private System.Windows.Forms.Label label1;
