@@ -29,6 +29,8 @@
         /// 
         private void InitializeComponent()
         {
+            administracionMenuStrip = new Controles.AdministracionMenuStrip(this);
+            creditosMenuStrip = new Controles.CreditosMenuStrip(this);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();
@@ -41,6 +43,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // administracionMenuStrip
+            // 
+            this.administracionMenuStrip.BackColor = System.Drawing.Color.White;
+            this.administracionMenuStrip.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.administracionMenuStrip.Location = new System.Drawing.Point(307, 371);
+            this.administracionMenuStrip.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.administracionMenuStrip.Name = "administracionMenuStrip";
+            this.administracionMenuStrip.Size = new System.Drawing.Size(329, 286);
+            this.administracionMenuStrip.TabIndex = 3;
+            this.administracionMenuStrip.Visible = false;
+            // 
+            // creditosMenuStrip
+            // 
+            this.creditosMenuStrip.BackColor = System.Drawing.Color.White;
+            this.creditosMenuStrip.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creditosMenuStrip.Location = new System.Drawing.Point(307, 449);
+            this.creditosMenuStrip.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.creditosMenuStrip.Name = "creditosMenuStrip";
+            this.creditosMenuStrip.Size = new System.Drawing.Size(329, 194);
+            this.creditosMenuStrip.TabIndex = 5;
+            this.creditosMenuStrip.Visible = false;
             // 
             // panel1
             // 
@@ -142,28 +166,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // administracionMenuStrip
-            // 
-            this.administracionMenuStrip.BackColor = System.Drawing.Color.White;
-            this.administracionMenuStrip.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.administracionMenuStrip.Location = new System.Drawing.Point(307, 266);
-            this.administracionMenuStrip.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.administracionMenuStrip.Name = "administracionMenuStrip";
-            this.administracionMenuStrip.Size = new System.Drawing.Size(329, 286);
-            this.administracionMenuStrip.TabIndex = 3;
-            this.administracionMenuStrip.Visible = false;
-            // 
-            // creditosMenuStrip
-            // 
-            this.creditosMenuStrip.BackColor = System.Drawing.Color.White;
-            this.creditosMenuStrip.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creditosMenuStrip.Location = new System.Drawing.Point(307, 266);
-            this.creditosMenuStrip.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.creditosMenuStrip.Name = "creditosMenuStrip";
-            this.creditosMenuStrip.Size = new System.Drawing.Size(329, 194);
-            this.creditosMenuStrip.TabIndex = 5;
-            this.creditosMenuStrip.Visible = false;
             // 
             // FrmPrincipal
             // 
