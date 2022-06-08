@@ -17,7 +17,7 @@ namespace SistemaInformaticoAzoc
             Application.SetCompatibleTextRenderingDefault(false);
             
             var frmInicioSesion = new FrmInicioSesion();
-            var frmPrincipal = new FrmPrincipal();
+            var frmPrincipal = new FrmPrincipal(frmInicioSesion.usuario);
 
             if (frmInicioSesion.ShowDialog() == DialogResult.OK)
             {
