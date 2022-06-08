@@ -16,5 +16,15 @@ namespace SistemaInformaticoAzoc.Formularios.Sistema
         {
             InitializeComponent();
         }
+
+        private void BtnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

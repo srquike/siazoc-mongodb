@@ -13,13 +13,14 @@ namespace SistemaInformaticoAzoc
         [STAThread]
         static void Main()
         {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            
             var frmInicioSesion = new FrmInicioSesion();
             var frmPrincipal = new FrmPrincipal();
 
             if (frmInicioSesion.ShowDialog() == DialogResult.OK)
             {
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(frmPrincipal);
 
                 if (frmPrincipal.DialogResult == DialogResult.Retry)

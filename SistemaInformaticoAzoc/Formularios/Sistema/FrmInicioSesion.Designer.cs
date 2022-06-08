@@ -114,8 +114,9 @@
             this.BtnIniciarSesion.Name = "BtnIniciarSesion";
             this.BtnIniciarSesion.Size = new System.Drawing.Size(270, 68);
             this.BtnIniciarSesion.TabIndex = 11;
-            this.BtnIniciarSesion.Text = "Crear empleado";
+            this.BtnIniciarSesion.Text = "Iniciar sesión";
             this.BtnIniciarSesion.UseVisualStyleBackColor = true;
+            this.BtnIniciarSesion.Click += new System.EventHandler(this.BtnIniciarSesion_Click);
             // 
             // BtnCancelar
             // 
@@ -128,6 +129,7 @@
             this.BtnCancelar.TabIndex = 10;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // FrmInicioSesion
             // 
@@ -136,7 +138,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.BtnCancelar;
-            this.ClientSize = new System.Drawing.Size(596, 216);
+            this.ClientSize = new System.Drawing.Size(591, 216);
             this.Controls.Add(this.BtnIniciarSesion);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.groupBox1);
