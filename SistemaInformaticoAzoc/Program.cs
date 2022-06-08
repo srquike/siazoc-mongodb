@@ -1,4 +1,5 @@
 ﻿using SistemaInformaticoAzoc.Formularios;
+using SistemaInformaticoAzoc.Formularios.Sistema;
 using System;
 using System.Windows.Forms;
 
@@ -12,9 +13,20 @@ namespace SistemaInformaticoAzoc
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPrincipal());
+            var frmInicioSesion = new FrmInicioSesion();
+            var frmPrincipal = new FrmPrincipal();
+
+            if (frmInicioSesion.ShowDialog() == DialogResult.OK)
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(frmPrincipal);
+
+                if (frmPrincipal.DialogResult == DialogResult.Retry)
+                {
+                    Application.Restart();
+                }
+            }           
         }
     }
 }

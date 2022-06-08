@@ -29,8 +29,6 @@
         /// 
         private void InitializeComponent()
         {
-            administracionMenuStrip = new Controles.AdministracionMenuStrip(this);
-            creditosMenuStrip = new Controles.CreditosMenuStrip(this);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.LblNombre = new System.Windows.Forms.Label();

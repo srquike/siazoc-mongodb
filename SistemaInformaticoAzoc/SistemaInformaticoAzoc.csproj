@@ -231,6 +231,12 @@
     <Compile Include="Formularios\Empleados\FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Sistema\FrmInicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sistema\FrmInicioSesion.Designer.cs">
+      <DependentUpon>FrmInicioSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Socios\FrmCrearSocio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -342,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Empleados\FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sistema\FrmInicioSesion.resx">
+      <DependentUpon>FrmInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Socios\FrmCrearSocio.resx">
       <DependentUpon>FrmCrearSocio.cs</DependentUpon>
