@@ -16,6 +16,10 @@ namespace SistemaInformaticoAzoc.Formularios.Cargos
             _cargoServices = new CargoService();
         }
 
+        /// crea un cargo con un clik
+    
+       
+
         private async void BtnCrearCargo_Click(object sender, EventArgs e)
         {
             try
