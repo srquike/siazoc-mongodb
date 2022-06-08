@@ -56,5 +56,10 @@ namespace SistemaInformaticoAzoc.Formularios.Socios
         {
             CmbGeneros.SelectedIndex = 0;
         }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
